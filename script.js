@@ -1,24 +1,27 @@
-// Auto-scroll for restaurant cards
+// Auto-scroll for donation and restaurant cards
+const donationList = document.querySelector('.donation-cards');
 const restaurantList = document.querySelector('.restaurant-cards');
 
-let scrollAmount = 0;
-let scrollSpeed = 1; // Adjust to control the scroll speed
+let scrollAmountDonation = 0;
+let scrollAmountRestaurant = 0;
+const scrollSpeed = 1; // Adjust to control the scroll speed
 
-function autoScrollRestaurants() {
+function autoScroll(element, scrollAmount) {
     scrollAmount += scrollSpeed;
 
-    // Scroll the restaurant list
-    restaurantList.scrollLeft = scrollAmount;
+    // Scroll the element
+    element.scrollLeft = scrollAmount;
 
     // Reset when it reaches the end
-    if (restaurantList.scrollLeft + restaurantList.clientWidth >= restaurantList.scrollWidth) {
+    if (element.scrollLeft + element.clientWidth >= element.scrollWidth) {
         scrollAmount = 0;
     }
 
-    requestAnimationFrame(autoScrollRestaurants);
+    requestAnimationFrame(() => autoScroll(element, scrollAmount));
 }
 
 // Start auto-scroll on page load
 window.onload = () => {
-    autoScrollRestaurants();
+    autoScroll(donationList, scrollAmountDonation);
+    autoScroll(restaurantList, scrollAmountRestaurant);
 };

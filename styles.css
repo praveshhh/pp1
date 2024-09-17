@@ -71,7 +71,7 @@ header {
     background-color: #218838;
 }
 
-/* Recent Donations (Horizontal Scroll) */
+/* Recent Donations (Horizontal Scroll with Automatic Slider) */
 .donation-list {
     margin-bottom: 40px;
     text-align: center;
@@ -79,9 +79,10 @@ header {
 
 .donation-cards {
     display: flex;
-    overflow-x: auto;
+    overflow: hidden; /* Hide the scrollbar */
     gap: 20px;
     padding: 10px 0;
+    scroll-behavior: smooth;
 }
 
 .donation-card {
@@ -91,9 +92,14 @@ header {
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Restaurant List (Horizontal Scroll) */
+.donation-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Restaurant List (Horizontal Scroll with Automatic Slider) */
 .restaurant-list-section {
     margin-bottom: 40px;
     text-align: center;
@@ -101,8 +107,8 @@ header {
 
 .restaurant-cards {
     display: flex;
+    overflow: hidden; /* Hide the scrollbar */
     gap: 20px;
-    overflow-x: auto;
     padding: 10px 0;
     scroll-behavior: smooth;
 }
@@ -114,6 +120,11 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
 }
 
 /* Footer */
