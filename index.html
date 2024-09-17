@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">MealDonation</div>
+        <div class="auth">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Signup</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="donation-section">
+            <h2>Donate to a Restaurant</h2>
+            <div class="donation-form">
+                <select id="restaurant-selection">
+                    <option value="1">Restaurant A</option>
+                    <option value="2">Restaurant B</option>
+                </select>
+                <input type="number" id="donation-amount" placeholder="Donation Amount ($)" />
+                <button class="btn donate-btn">Donate</button>
+            </div>
+        </section>
+
+        <section class="donation-list">
+            <h3>Recent Donations</h3>
+            <div class="donation-cards">
+                <div class="donation-card glass">JohnDoe donated $50 to Restaurant A</div>
+                <div class="donation-card glass">JaneSmith donated $20 to Restaurant B</div>
+                <div class="donation-card glass">User3 donated $100 to Restaurant C</div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+
+        <section class="restaurant-list-section">
+            <h3>Available Restaurants</h3>
+            <div class="restaurant-cards">
+                <div class="restaurant-card">
+                    <h4>Restaurant A</h4>
+                    <p>Available Meals: 2</p>
+                </div>
+                <div class="restaurant-card">
+                    <h4>Restaurant B</h4>
+                    <p>Available Meals: 1</p>
+                </div>
+                <div class="restaurant-card">
+                    <h4>Restaurant C</h4>
+                    <p>Available Meals: 3</p>
+                </div>
+                <!-- Add more restaurants as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: support@mealdonation.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

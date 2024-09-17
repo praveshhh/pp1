@@ -1,0 +1,137 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth .btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.auth .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Donation Section */
+.donation-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.donation-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#restaurant-selection, #donation-amount {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.donate-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.donate-btn:hover {
+    background-color: #218838;
+}
+
+/* Recent Donations (Horizontal Scroll) */
+.donation-list {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.donation-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.donation-card {
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Restaurant List (Horizontal Scroll) */
+.restaurant-list-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.restaurant-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.restaurant-card {
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Scrollbar customization */
+.donation-cards::-webkit-scrollbar,
+.restaurant-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.donation-cards::-webkit-scrollbar-thumb,
+.restaurant-cards::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
