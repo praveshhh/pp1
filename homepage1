@@ -1,0 +1,69 @@
+<div class='min-h-screen flex flex-col justify-between bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 text-white font-sans text-lg'>
+  <!-- Main Container -->
+  <!-- Header Section -->
+  <header class='p-4 flex justify-between items-center shadow-lg'>
+  <div class='text-2xl font-bold'>YourPlatformLogo</div>
+    <nav class='flex'>
+    <a href='/login' class='mx-2'>Login</a>
+    <a href='/signup' class='mx-2 bg-white text-gray-800 px-3 py-1 rounded-md'>Signup</a>
+    </nav>
+  </header>
+  <!-- Donation Section -->
+  <div class='flex-1 p-4 flex flex-col items-center justify-center'>
+  <h1 class='text-3xl font-bold mb-4'>Donate to a Restaurant</h1>
+    <div class='bg-white shadow-md p-4 rounded-lg mb-4 w-80'>
+      <!-- Donate Card -->
+    <label for='restaurant' class='block text-sm font-medium mb-1'>Select a Restaurant</label>
+      <select id='restaurant' class='block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-400 focus:ring focus:ring-purple-400'>
+      <option value='1'>Restaurant A</option>
+      <option value='2'>Restaurant B</option>
+      </select>
+    <label for='amount' class='block text-sm font-medium my-3'>Enter Donation Amount</label>
+      <input id='amount' type='text' placeholder='$' class='w-full rounded-md border-gray-300 shadow-sm focus:border-purple-400 focus:ring focus:ring-purple-400'>
+      <button class='mt-4 bg-purple-500 text-white py-2 px-4 rounded-lg'>Donate Now</button>
+      </div>
+      <div class='bg-white shadow-md p-4 rounded-lg w-80'>
+        <!-- Donation List -->
+      <h2 class='text-xl font-bold mb-2'>Recent Donations</h2>
+        <div class='flex space-x-4 overflow-x-auto'>
+          <!-- Donation Cards -->
+          <div class='flex flex-col items-center bg-opacity-60 bg-black p-3 rounded-lg'>
+          <div>JohnDoe123</div>
+          <div>$50</div>
+          <div>Restaurant A</div>
+          <div>2024-09-17 14:35:00</div>
+          </div>
+          <div class='flex flex-col items-center bg-opacity-60 bg-black p-3 rounded-lg'>
+          <div>JaneSmith</div>
+          <div>$20</div>
+          <div>Restaurant B</div>
+          <div>2024-09-17 12:00:00</div>
+          </div>
+          <div class='flex flex-col items-center bg-opacity-60 bg-black p-3 rounded-lg'>
+          <div>SamBrown</div>
+          <div>$100</div>
+          <div>Restaurant A</div>
+          <div>2024-09-17 10:15:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class='p-4 bg-gray-800'>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <!-- Contact Us -->
+        <div>
+        <h3 class='text-xl font-semibold'>Contact Us</h3>
+        <p>Email: support@yourplatform.com</p>
+      </div>
+      <!-- Follow Us -->
+      <div>
+      <h3 class='text-xl font-semibold'>Follow Us</h3>
+        <div class='flex space-x-4'>
+        <a href='https://twitter.com/yourplatform' class='text-white hover:underline'>Twitter</a>
+        <a href='https://facebook.com/yourplatform' class='text-white hover:underline'>Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
